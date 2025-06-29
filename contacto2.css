@@ -1,0 +1,142 @@
+html, body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #000000, #000000);
+  color: #201f1f;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  background: linear-gradient(90deg, #000000, #272a2a, #242424);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+  user-select: none;
+}
+
+header h1 {
+  font-weight: 800;
+  font-size: 2.8rem;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-shadow: 0 0 8px #f9c94e88;
+}
+
+.volver {
+  position: absolute;
+  top: 1.8rem;
+  left: 1.8rem;
+  background-color: #f9c94e;
+  color: #1c1c1c;
+  font-weight: 700;
+  padding: 0.55rem 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px #f9c94e88;
+  transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+  user-select: none;
+}
+
+.volver:hover,
+.volver:focus {
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 6px 12px #f9c94eff;
+  outline: none;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  max-width: 800px;
+  margin: 3rem auto 4rem;
+  padding: 2rem;
+  background: #1e1e1e;
+  border-radius: 20px;
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.7),
+    inset 0 0 60px #f9c94e22;
+  user-select: none;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  color: #f9c94e;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  user-select: text;
+}
+
+.contact-info p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  user-select: text;
+}
+
+.contact-form {
+  margin-top: 2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0 1.5rem 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  resize: vertical;
+  background: #292929;
+  color: #eee;
+  box-shadow:
+    inset 2px 2px 6px #1c1c1c,
+    inset -2px -2px 6px #3a3a3a;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow:
+    0 0 8px #f9c94e;
+  background: #1c1c1c;
+  color: #fff;
+}
+
+button {
+  background-color: #f9c94e;
+  color: #1c1c1c;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px #f9c94eaa;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+button:hover,
+button:focus {
+  background-color: #fff;
+  box-shadow: 0 6px 16px #f9c94eff;
+  outline: none;
+}
+
+/* FOOTER GENERAL */
+footer {
+  background: #121212;
+  padding: 1.5rem;
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+  user-select: none;
+}
